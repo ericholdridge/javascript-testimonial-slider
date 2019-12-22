@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// Testimonial
+.testimonial {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .container {
+        padding: 200px 0;
+        background: url('https://images.unsplash.com/photo-1477951233099-d2c5fbd878ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80')no-repeat center center;
+        position: relative;
+        .overlay {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: black;
+            opacity: .6;
+            z-index: 10;
+        }
+        .left {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            background: transparent;
+            border: none;
+            font-size: 1.8rem;
+            // centers the icon
+            transform: translateY(-50%);
+            &:focus {
+                outline: none;
+            }
+        }
+        .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            right: -40px;
+            background: transparent;
+            border: none;
+            font-size: 1.8rem;
+            // centers the icon
+            transform: translateY(-50%);
+            &:focus {
+                outline: none;
+            }
+        }
+        .wrapper {
+            position: relative;
+            z-index: 20;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            .slider {
+                width: 100%;
+                max-width: 600px;
+                .wrap {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        border-radius: 50%;
+                    }
+                    .info {
+                        padding: 0 12px;
+                    }
+                }
+                p {
+                    margin: 13px 0 0 0;
+                }
+                .rating {
+                    padding: 20px 0;
+                }
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+    }
+}

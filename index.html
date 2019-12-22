@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Testimonial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9808de19ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="testimonial">
+        <div class="container">
+            <div class="overlay"></div>
+            <button id="button--left" class="left"><i class="fas fa-chevron-left"></i></button>
+            <div class="wrapper">
+                <div class="slider slider1">
+                    <div class="wrap">
+                        <img src="data:image/webp;base64,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" alt="">
+                        <div class="info">
+                            <h3 class="name">Eric Holdridge</h3>
+                            <span class="occupation">Web Developer</span>
+                        </div>
+                    </div>
+                    <p>Slide 1</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div class="wrapper">
+            <div class="wrapper">
+                <div class="slider slider2">
+                    <div class="wrap">
+                        <img src="https://ericholdridge.github.io/PracticeProject6/img/perso2.webp" alt="">
+                        <div class="info">
+                            <h3 class="name">Eric Holdridge</h3>
+                            <span class="occupation">Web Developer</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto dignissimos optio esse officiis asperiores eos, ab in natus magnam?</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div class="wrapper">
+            <div class="wrapper">
+                <div class="slider slider3">
+                    <div class="wrap">
+                        <img src="data:image/webp;base64,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" alt="">
+                        <div class="info">
+                            <h3 class="name">Eric Holdridge</h3>
+                            <span class="occupation">Web Developer</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore iste, dicta quas deserunt labore praesentium eos quod similique odit aliquam eius error ullam laboriosam natus? Dolorum vero incidunt corrupti magnam harum fugiat quisquam assumenda, ab amet? Blanditiis, amet asperiores!</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div class="wrapper">
+            <button id="button--right" class="right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <script src="testimonial.js"></script>
+</body>
+</html>
